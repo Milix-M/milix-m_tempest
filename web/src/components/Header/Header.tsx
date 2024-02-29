@@ -86,15 +86,15 @@ const Header = () => {
       <div className='navbar-end'>
         {/* sun icon */}
         {theme === 'dark' && (
-          <button className='btn btn-circle'>
-            <FaRegSun className='swap-on w-5 h-5' onClick={themeSwitcher} />
+          <button className='btn btn-circle' onClick={themeSwitcher}>
+            <FaRegSun className='swap-on w-5 h-5' />
           </button>
         )}
 
         {/* moon icon */}
         {theme === 'light' && (
-          <button className='btn btn-circle'>
-            <FaRegMoon className='swap-off w-5 h-5' onClick={themeSwitcher} />
+          <button className='btn btn-circle' onClick={themeSwitcher}>
+            <FaRegMoon className='swap-off w-5 h-5' />
           </button>
         )}
       </div>
