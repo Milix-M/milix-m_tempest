@@ -1,7 +1,6 @@
 'use client'
 
 import Header from '@/components/Header/Header'
-import useSwitchTheme from '@/utils/theme'
 
 export default function Home () {
   return (
