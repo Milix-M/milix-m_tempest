@@ -4,6 +4,8 @@ import useSwitchTheme from '@/utils/theme'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { FaRegMoon, FaRegSun } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import { SiZenn } from 'react-icons/si'
 
 const Header = () => {
   const [mounted, setMounted] = useState(false)
@@ -80,9 +82,38 @@ const Header = () => {
               <li>
                 <a className='font-bold'>Contact</a>
               </li>
-              <li>
-                <a className='font-bold'>Zenn</a>
-              </li>
+              <ul className='lg:menu-horizontal'>
+                <li>
+                  <details>
+                    <summary className='font-bold'>Blog</summary>
+                    {/* マウントされてから表示しないとhydration errorが発生する */}
+                    {mounted && (
+                      <ul className='top-8'>
+                        {process.env.NEXT_PUBLIC_ZENN && (
+                          <a href={process.env.NEXT_PUBLIC_ZENN as string}>
+                            <li>
+                              <div className='flex flex-row'>
+                                <SiZenn className='w-4 h-4' />
+                                Zenn
+                              </div>
+                            </li>
+                          </a>
+                        )}
+                        {process.env.NEXT_PUBLIC_TWITTER && (
+                          <a href={process.env.NEXT_PUBLIC_TWITTER as string}>
+                            <li>
+                              <div className='flex flex-row'>
+                                <FaXTwitter className='w-4 h-4' />
+                                <a>X(Twitter)</a>
+                              </div>
+                            </li>
+                          </a>
+                        )}
+                      </ul>
+                    )}
+                  </details>
+                </li>
+              </ul>
             </ul>
           </div>
           <div className='navbar-end'>
