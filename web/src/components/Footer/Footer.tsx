@@ -3,7 +3,7 @@ import { SiZenn } from 'react-icons/si'
 
 const Footer = () => {
   return (
-    <footer className='footer items-center p-4 bg-neutral text-neutral-content'>
+    <footer className='footer items-center p-4 bg-base-300'>
       <aside className='items-center grid-flow-col'>
         <p>© 2023 {process.env.NEXT_PUBLIC_REALNAME}. All rights reserved.</p>
       </aside>
