@@ -2,6 +2,7 @@
 
 import useSwitchTheme from '@/utils/theme'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { FaRegMoon, FaRegSun } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
@@ -48,16 +49,16 @@ const Header = () => {
                 className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box'
               >
                 <li>
-                  <a>Home</a>
+                  <Link href={'/'}>Home</Link>
                 </li>
                 <li>
-                  <a>Profile</a>
+                  <Link href={'/profile'}>Profile</Link>
                 </li>
                 <li>
-                  <a>Works</a>
+                  <Link href={'/works'}>Works</Link>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <Link href={'/contact'}>Contact</Link>
                 </li>
                 <li>
                   <a>Zenn</a>
@@ -71,16 +72,24 @@ const Header = () => {
           <div className='navbar-center hidden lg:flex'>
             <ul className='menu menu-horizontal px-1'>
               <li>
-                <a className='font-bold'>Home</a>
+                <Link href={'/'} className='font-bold'>
+                  Home
+                </Link>
               </li>
               <li>
-                <a className='font-bold'>Profile</a>
+                <Link href={'/profile'} className='font-bold'>
+                  Profile
+                </Link>
               </li>
               <li>
-                <a className='font-bold'>Works</a>
+                <Link href={'/works'} className='font-bold'>
+                  Works
+                </Link>
               </li>
               <li>
-                <a className='font-bold'>Contact</a>
+                <Link href={'/contact'} className='font-bold'>
+                  Contact
+                </Link>
               </li>
               <ul className='lg:menu-horizontal'>
                 <li>
@@ -104,7 +113,7 @@ const Header = () => {
                             <li>
                               <div className='flex flex-row'>
                                 <FaXTwitter className='w-4 h-4' />
-                                <a>X(Twitter)</a>
+                                X(Twitter)
                               </div>
                             </li>
                           </a>
