@@ -15,17 +15,17 @@ const Header = () => {
     setMounted(true)
   }, [])
 
-  if (!mounted) {
-    return null
-  }
-
   return (
     <div className='relative'>
       <div className='fixed top-0 left-0 right-0 z-[9999999999]'>
         <div className='navbar bg-base-300'>
           <div className='navbar-start'>
             <div className='dropdown'>
-              <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
+              <div
+                tabIndex={0}
+                role='button'
+                className='btn btn-ghost lg:hidden'
+              >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-5 w-5'
@@ -86,17 +86,20 @@ const Header = () => {
             </ul>
           </div>
           <div className='navbar-end'>
-            {/* sun icon */}
-            {theme === 'dark' && (
-              <button className='btn btn-circle' onClick={themeSwitcher}>
-                <FaRegSun className='swap-on w-5 h-5' />
-              </button>
-            )}
-            {/* moon icon */}
-            {theme === 'light' && (
-              <button className='btn btn-circle' onClick={themeSwitcher}>
-                <FaRegMoon className='swap-off w-5 h-5' />
-              </button>
+            {/* マウントされてから表示しないとhydration errorが発生する */}
+            {mounted && (
+              <div>
+                {theme === 'dark' && (
+                  <button className='btn btn-circle' onClick={themeSwitcher}>
+                    <FaRegSun className='swap-on w-5 h-5' />
+                  </button>
+                )}
+                {theme === 'light' && (
+                  <button className='btn btn-circle' onClick={themeSwitcher}>
+                    <FaRegMoon className='swap-off w-5 h-5' />
+                  </button>
+                )}
+              </div>
             )}
           </div>
         </div>
