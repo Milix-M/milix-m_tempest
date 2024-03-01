@@ -23,7 +23,7 @@ export default function RootLayout ({
         <ThemeProvider>
           <div>
             <Header />
-            <main className='flex min-h-screen flex-col items-center justify-between'>
+            <main className='min-h-screen'>
               {children}
             </main>
             <Footer />
