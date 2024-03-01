@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-providers'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+import Index from '@/components/Home/Index'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +21,15 @@ export default function RootLayout ({
   return (
     <html lang='ja' suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <div>
+            <Header />
+            <main className='flex min-h-screen flex-col items-center justify-between p-40'>
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
