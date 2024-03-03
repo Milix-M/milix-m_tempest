@@ -39,7 +39,7 @@ const Profile = () => {
         </div>
       </div>
       <div className='pt-8 max-w-sm w-full'>
-        <p className='work-break text-center'>{process.env.NEXT_PUBLIC_BIO}</p>
+        <p className='break-words text-center'>{process.env.NEXT_PUBLIC_BIO}</p>
       </div>
     </div>
   )
