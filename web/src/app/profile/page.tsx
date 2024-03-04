@@ -9,8 +9,8 @@ export default function Profile () {
   return (
     <div className='flex justify-center mt-3'>
       <div className='mt-[68px] mx-auto p-2'>
-        <h1 className='font-bold text-3xl pl-4 mb-5'>Profile</h1>
-        <div className='sm:flex'>
+        <h1 className='font-bold text-3xl sm:mb-10'>Profile</h1>
+        <div className='sm:flex justify-center'>
           <div className='avatar p-10 flex justify-center'>
             <div className='w-44 rounded-full'>
               <Image
