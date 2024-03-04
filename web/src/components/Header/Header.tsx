@@ -65,9 +65,9 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <a className='btn btn-ghost text-xl'>
+            <Link className='btn btn-ghost text-xl' href={'/'}>
               {process.env.NEXT_PUBLIC_REALNAME}
-            </a>
+            </Link>
           </div>
           <div className='navbar-center hidden lg:flex'>
             <ul className='menu menu-horizontal px-1'>
