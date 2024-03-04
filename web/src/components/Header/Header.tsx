@@ -46,7 +46,7 @@ const Header = () => {
               </div>
               <ul
                 tabIndex={0}
-                className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box'
+                className='menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box'
               >
                 <li>
                   <Link href={'/'}>Home</Link>
@@ -60,9 +60,30 @@ const Header = () => {
                 <li>
                   <Link href={'/contact'}>Contact</Link>
                 </li>
-                <li>
-                  <a>Zenn</a>
-                </li>
+                {mounted && (
+                  <>
+                    {process.env.NEXT_PUBLIC_ZENN && (
+                      <a href={process.env.NEXT_PUBLIC_ZENN as string}>
+                        <li>
+                          <div className='flex flex-row'>
+                            <SiZenn className='w-4 h-4' />
+                            Zenn
+                          </div>
+                        </li>
+                      </a>
+                    )}
+                    {process.env.NEXT_PUBLIC_TWITTER && (
+                      <a href={process.env.NEXT_PUBLIC_TWITTER as string}>
+                        <li>
+                          <div className='flex flex-row'>
+                            <FaXTwitter className='w-4 h-4' />
+                            X(Twitter)
+                          </div>
+                        </li>
+                      </a>
+                    )}
+                  </>
+                )}
               </ul>
             </div>
             <Link className='btn btn-ghost text-xl' href={'/'}>
