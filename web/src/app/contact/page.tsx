@@ -1,11 +1,11 @@
 'use client'
 
-import Index from '@/components/Home/Index'
+import Profile from '@/components/Home/Profile'
 
 export default function Home () {
   return (
     <div>
-      <Index />
+      <Profile />
     </div>
   )
 }
