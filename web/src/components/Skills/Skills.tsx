@@ -6,7 +6,7 @@ type SkillsProps = {
 
 const Skills: React.FC<SkillsProps> = ({ title, description, icon }) => {
   return (
-    <div className='max-w-sm bg-neutral p-3 rounded'>
+    <div className='max-w-md bg-neutral p-3 rounded'>
       <div className='flex'>
         <div className='mr-3 rounded-md aspect-square w-full max-h-14 flex justify-center items-center'>
           {icon}
