@@ -1,9 +1,7 @@
-import { SiTypescript } from 'react-icons/si'
-import Skills from '@/components/Skills/Skills'
 import Image from 'next/image'
 import { BiSolidIdCard } from 'react-icons/bi'
-import { FaPython } from 'react-icons/fa'
 import { IoIosPin } from 'react-icons/io'
+import SkillsSet from '@/CustomSettings/SkillsSet'
 
 export default function Profile () {
   return (
@@ -45,26 +43,7 @@ export default function Profile () {
         </div>
         <h1 className='font-bold text-2xl mt-3 mb-9'>Skills</h1>
         <div className='grid sm:grid-cols-2 gap-7 grid-cols-1'>
-          <Skills
-            title='Python'
-            description='Pythonは、Guido van Rossumによって設計された高水準のプログラミング言語で、1991年に最初にリリースされました。Pythonは、読みやすく、効率的なコードを書くことを重視しており、多くのプログラマーにとって最初の選択肢となっています。'
-            icon={<FaPython className='w-10 h-10' />}
-          />
-          <Skills
-            title='TypeScript'
-            description='TypeScriptは、Microsoftによって開発されたオープンソースのプログラミング言語で、JavaScriptのスーパーセットです。TypeScriptは、静的型付けをサポートし、コードの品質を向上させます。'
-            icon={<SiTypescript className='w-9 h-9' />}
-          />
-          <Skills
-            title='TypeScript'
-            description='TypeScriptは、Microsoftによって開発されたオープンソースのプログラミング言語で、JavaScriptのスーパーセットです。TypeScriptは、静的型付けをサポートし、コードの品質を向上させます。'
-            icon={<SiTypescript className='w-9 h-9' />}
-          />
-          <Skills
-            title='TypeScript'
-            description='TypeScriptは、Microsoftによって開発されたオープンソースのプログラミング言語で、JavaScriptのスーパーセットです。TypeScriptは、静的型付けをサポートし、コードの品質を向上させます。'
-            icon={<SiTypescript className='w-9 h-9' />}
-          />
+          <SkillsSet />
         </div>
       </div>
     </div>
