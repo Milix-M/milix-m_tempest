@@ -5,7 +5,7 @@ const Career = () => {
         <div className='collapse collapse-arrow join-item border border-base-300'>
           <input type='radio' name='my-accordion-4' defaultChecked />
           <div className='collapse-title text-xl font-medium'>
-            S高等学校 <span className='ml-1 text-sm'>2021/04 ~ 2024/03</span>
+            XXX High School <span className='ml-1 text-sm'>2021/04 ~ 2024/03</span>
           </div>
           <div className='collapse-content'>
             <p>普通科</p>
