@@ -5,7 +5,7 @@ import Profile from '@/components/Home/Profile'
 export default function Home () {
   return (
     <div>
-      <Profile />
+      <h1 className='font-bold text-3xl sm:mb-10'>Contact</h1>
     </div>
   )
 }
