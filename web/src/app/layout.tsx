@@ -23,9 +23,7 @@ export default function RootLayout ({
         <ThemeProvider>
           <div>
             <Header />
-            <main className='min-h-screen mt-[68px] mx-auto max-w-4xl px-5 py-7 justify-center flex'>
-              <div className='w-full'>{children}</div>
-            </main>
+            {children}
             <Footer />
           </div>
         </ThemeProvider>
