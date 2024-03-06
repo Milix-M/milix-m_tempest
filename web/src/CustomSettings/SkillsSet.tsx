@@ -12,7 +12,7 @@ export default function SkillsSet () {
       <Skills
         title='Python'
         description='僕が使用しているメインの言語です。FastAPIを使用したAPI開発やFlaskを使用したWebアプリの開発まで幅広く使えます。'
-        icon={<FaPython className='w-10 h-10' />}
+        icon={<FaPython className='w-9 h-9' />}
       />
       <Skills
         title='TypeScript'
