@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { BiSolidIdCard } from 'react-icons/bi'
 import { IoIosPin } from 'react-icons/io'
 import SkillsSet from '@/CustomSettings/SkillsSet'
+import Career from '@/CustomSettings/Career'
 
 export default function Profile () {
   return (
@@ -41,9 +42,15 @@ export default function Profile () {
             </div>
           </div>
         </div>
-        <h1 className='font-bold text-2xl mt-3 mb-9'>Skills</h1>
-        <div className='grid sm:grid-cols-2 gap-7 grid-cols-1'>
-          <SkillsSet />
+        <div className='my-6'>
+          <h1 className='font-bold text-2xl mt-3 mb-6'>Skills</h1>
+          <div className='grid sm:grid-cols-2 gap-7 grid-cols-1'>
+            <SkillsSet />
+          </div>
+        </div>
+        <div className='my-6'>
+          <h1 className='font-bold text-2xl mt-3 mb-6'>Career</h1>
+          <Career />
         </div>
       </div>
     </div>
