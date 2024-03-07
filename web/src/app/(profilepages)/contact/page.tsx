@@ -28,7 +28,8 @@ export default function Home () {
   return (
     <div>
       <h1 className='font-bold text-3xl sm:mb-10'>Contact</h1>
-      <form action='' onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input type='text' name='wana' className='hidden' />
         <div>
           <div className='grid sm:grid-cols-2 gap-5 grid-cols-1'>
             <div className=''>
