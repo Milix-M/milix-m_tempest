@@ -1,4 +1,4 @@
-import 'server-only'
+'use server'
 
 const FetchForm = async (formProps: FormProps) => {
   try {
