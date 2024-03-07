@@ -3,6 +3,7 @@
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import FetchForm from '@/utils/FetchForm'
 
 const schema = yup
   .object({
@@ -23,12 +24,15 @@ export default function Home () {
   } = useForm({
     resolver: yupResolver(schema)
   })
-  const onSubmit = () => console.log()
 
   return (
     <div>
       <h1 className='font-bold text-3xl sm:mb-10'>Contact</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form
+        onSubmit={handleSubmit(async data => {
+          await FetchForm(data)
+        })}
+      >
         <input type='text' name='wana' className='hidden' />
         <div>
           <div className='grid sm:grid-cols-2 gap-5 grid-cols-1'>
