@@ -1,6 +1,6 @@
 'use client'
 
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import FetchForm from '@/utils/FetchForm'
@@ -16,23 +16,24 @@ const schema = yup
   })
   .required()
 
-export default function Home () {
+export default function Contact () {
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm({
+    mode: 'onSubmit',
     resolver: yupResolver(schema)
+  })
+
+  const onSubmit = handleSubmit(data => {
+    FetchForm(data)
   })
 
   return (
     <div>
       <h1 className='font-bold text-3xl sm:mb-10'>Contact</h1>
-      <form
-        onSubmit={handleSubmit(async data => {
-          await FetchForm(data)
-        })}
-      >
+      <form onSubmit={onSubmit}>
         <input type='text' name='wana' className='hidden' />
         <div>
           <div className='grid sm:grid-cols-2 gap-5 grid-cols-1'>
