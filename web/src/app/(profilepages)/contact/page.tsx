@@ -1,5 +1,7 @@
 'use client'
 
+// todo 送信ボタン押したあと、送信しました！メッセージを表示し、入力内容をクリアする
+
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -32,7 +34,7 @@ export default function Contact () {
 
   return (
     <div>
-      <h1 className='font-bold text-3xl sm:mb-10'>Contact</h1>
+      <h1 className='font-bold text-3xl mb-7'>Contact</h1>
       <form onSubmit={onSubmit}>
         <input type='text' name='wana' className='hidden' />
         <div>
