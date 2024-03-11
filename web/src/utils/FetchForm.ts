@@ -9,6 +9,7 @@ const FetchForm = async (formProps: FormProps) => {
       },
       body: JSON.stringify(formProps)
     })
+    return await Promise.resolve()
   } catch (error) {
     console.log('error!')
     throw error
