@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import FetchForm from '@/utils/FetchForm'
+import { useRouter } from 'next/navigation'
 
 const schema = yup
   .object({
@@ -19,6 +20,8 @@ const schema = yup
   .required()
 
 export default function Contact () {
+  const router = useRouter()
+
   const {
     register,
     handleSubmit,
@@ -27,9 +30,10 @@ export default function Contact () {
     mode: 'onSubmit',
     resolver: yupResolver(schema)
   })
-
   const onSubmit = handleSubmit(data => {
-    FetchForm(data)
+    FetchForm(data).then(() => {
+      router.push('/contact/thanks')
+    })
   })
 
   return (
