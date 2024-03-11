@@ -53,6 +53,7 @@ export default function Contact () {
                   type='text'
                   placeholder='Your Name'
                   className='input input-bordered w-full'
+                  autoComplete='name'
                   {...register('name')}
                 />
               </label>
@@ -70,6 +71,7 @@ export default function Contact () {
                   type='email'
                   placeholder='Your Email Address'
                   className='input input-bordered w-full'
+                  autoComplete='email'
                   {...register('email')}
                 />
               </label>
