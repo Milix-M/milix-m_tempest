@@ -91,7 +91,7 @@ const Header = () => {
             </Link>
           </div>
           <div className='navbar-center hidden lg:flex'>
-            <ul className='menu menu-horizontal px-1'>
+            <ul className='menu menu-horizontal space-x-1.5'>
               <li>
                 <Link href={'/'} className='font-bold'>
                   Home
@@ -150,7 +150,7 @@ const Header = () => {
             {/* マウントされてから表示しないとhydration errorが発生する */}
             {mounted && (
               <div>
-                {theme === 'dark' && (
+                {theme === 'dim' && (
                   <button className='btn btn-circle' onClick={themeSwitcher}>
                     <FaRegSun className='swap-on w-5 h-5' />
                   </button>
