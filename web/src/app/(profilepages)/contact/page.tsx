@@ -94,7 +94,7 @@ export default function Contact () {
             <span className='text-sm'>{errors.message?.message}</span>
           )}
           <div className='flex justify-center mt-4'>
-            <button className='btn'>お問い合わせ送信</button>
+            <button className='btn btn-primary'>お問い合わせ送信</button>
           </div>
         </div>
       </form>
