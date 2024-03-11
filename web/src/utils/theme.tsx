@@ -7,14 +7,14 @@ const useSwitchTheme = () => {
 
   function switchTheme () {
     switch (theme) {
-      case 'dark':
+      case 'dim':
         setTheme('light')
         break
       case 'light':
-        setTheme('dark')
+        setTheme('dim')
         break
       default:
-        setTheme('dark')
+        setTheme('dim')
         break
     }
   }
