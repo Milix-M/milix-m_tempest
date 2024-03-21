@@ -19,7 +19,7 @@ const CareerTimeline = () => {
           </div>
           <div className='timeline-start md:text-end mb-10'>
             <time className='font-mono italic'>2021/04</time>
-            <div className='text-lg font-black'>XXX 高等学校 入学</div>
+            <div className='text-lg font-black'>S高等学校 入学</div>
             普通科に入学、通信制の高校で、一般的な勉強をしました。
           </div>
           <hr />
@@ -42,7 +42,7 @@ const CareerTimeline = () => {
           </div>
           <div className='timeline-end mb-10'>
             <time className='font-mono italic'>2024/03</time>
-            <div className='text-lg font-black'>XXX 高等学校 卒業</div>
+            <div className='text-lg font-black'>S高等学校 卒業</div>
             色々な事を学びました。
           </div>
           <hr />
