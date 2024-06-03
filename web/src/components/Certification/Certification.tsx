@@ -21,7 +21,7 @@ const Certification: React.FC<CertProps> = ({
             </div>
           </div>
           <div>
-            <div className="my-1">
+            <div className="mb-1">
               <h2 className="text-base font-semibold">{company}</h2>
               <h2 className="text-xl font-bold">{title}</h2>
             </div>
