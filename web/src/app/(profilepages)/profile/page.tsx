@@ -3,6 +3,7 @@ import { BiSolidIdCard } from 'react-icons/bi'
 import { IoIosPin } from 'react-icons/io'
 import SkillsSet from '@/CustomSettings/SkillsSet'
 import CareerTimeline from '@/CustomSettings/CareerTimeline'
+import CertSet from '@/CustomSettings/CertSet'
 
 export default function Profile () {
   return (
@@ -50,6 +51,10 @@ export default function Profile () {
       <div className='my-6'>
         <h1 className='font-bold text-2xl mt-3 mb-6'>Career</h1>
         <CareerTimeline />
+      </div>
+      <div className='my-6'>
+        <h1 className='font-bold text-2xl mt-3 mb-6'>Certification</h1>
+        <CertSet />
       </div>
     </div>
   )
