@@ -1,6 +1,7 @@
 type CertProps = {
   company: string;
   title: string;
+  getDate: string;
   description: string;
   icon: React.ReactNode;
 };
@@ -8,6 +9,7 @@ type CertProps = {
 const Certification: React.FC<CertProps> = ({
   company,
   title,
+  getDate,
   description,
   icon,
 }) => {
@@ -21,9 +23,10 @@ const Certification: React.FC<CertProps> = ({
             </div>
           </div>
           <div>
-            <div className="mb-1">
-              <h2 className="text-base font-semibold">{company}</h2>
+            <div className="mb-1.5">
+              <h2 className="font-semibold">{company}</h2>
               <h2 className="text-xl font-bold">{title}</h2>
+              <p className="text-sm font-semibold">{getDate} 取得</p>
             </div>
             <p className="break-words">{description}</p>
           </div>
