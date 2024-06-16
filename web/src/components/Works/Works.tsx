@@ -13,7 +13,7 @@ const Works: React.FC<WorksProps> = ({ title, description, link }) => {
           <p>{description}</p>
           <div className="card-actions justify-end">
             <a href={link} target="_blank">
-              <button className="btn btn-primary">View Detail
+              <button className="btn btn-primary">作品を見る
               </button>
             </a>
           </div>
