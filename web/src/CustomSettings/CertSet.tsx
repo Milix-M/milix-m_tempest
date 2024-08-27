@@ -15,7 +15,7 @@ export default function CertSet() {
         <Certification
           company="Oracle Japan"
           title="Oracle Certified Java Programmer, Gold SE 11"
-          getDate="2024/05/26"
+          getDate="2024/08/24"
           description="設計者の意図を正しく理解して独力で機能実装が行える中上級者向け資格。"
           icon={<FaJava className="w-9 h-9" />}
         />
