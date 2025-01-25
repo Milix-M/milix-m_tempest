@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='footer items-center p-4 bg-base-300'>
       <aside className='items-center grid-flow-col'>
-        <p>© 2023 {process.env.NEXT_PUBLIC_REALNAME}. All rights reserved.</p>
+        <p>© 2025 {process.env.NEXT_PUBLIC_REALNAME}. All rights reserved.</p>
       </aside>
       <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
         {process.env.NEXT_PUBLIC_ZENN && (

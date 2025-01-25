@@ -1,4 +1,4 @@
-import { FaDocker, FaLinux } from "react-icons/fa";
+import { FaAws, FaCloud, FaDocker, FaLinux } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiKubernetes, SiNextdotjs } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
@@ -31,7 +31,7 @@ export default function SkillsSet() {
       />
       <Skills
         title='Java'
-        description='仕事で使っている言語です。Springフレームワークをメインで使用しています。'
+        description='仕事で使っている言語です。Springフレームワークをメインで使用していました。'
         icon={<FaJava className='w-9 h-9' />}
       />
       <Skills
@@ -45,9 +45,19 @@ export default function SkillsSet() {
         icon={<SiKubernetes className='w-9 h-9' />}
       />
       <Skills
-        title='Linux'
-        description='仕事、趣味で使用しています。'
+        title='Linux(Ubuntu)'
+        description='仕事、趣味で使用しています。カーネルのビルドなども経験があります。'
         icon={<FaLinux className='w-9 h-9' />}
+      />
+      <Skills
+        title='OpenStack'
+        description='仕事で使用しています。プライベートクラウド構築に使用しました。'
+        icon={<FaCloud className='w-9 h-9' />}
+      />
+      <Skills
+        title='AWS'
+        description='仕事で使用しています。'
+        icon={<FaAws className='w-9 h-9' />}
       />
     </>
   )
