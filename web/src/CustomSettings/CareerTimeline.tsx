@@ -66,7 +66,7 @@ const CareerTimeline = () => {
           <div className='timeline-start md:text-end mb-10'>
             <time className='font-mono italic'>2024/04</time>
             <div className='text-lg font-black'>名古屋市 IT系中小企業</div>
-            Javaを書いています!
+            バックエンド・インフラ構築業務に従事。
           </div>
           <hr />
         </li>
@@ -89,7 +89,7 @@ const CareerTimeline = () => {
           <div className='timeline-end mb-10'>
             <time className='font-mono italic'>Now</time>
             <div className='text-lg font-black'>現在</div>
-            今は楽しく仕事でJavaを書いています!
+            Java+Springのバックエンド開発や今ではKubernetesやOpenStack,Linuxを使用したプライベートクラウドの検討、構築業務をしています。
           </div>
           {/* <hr /> */}
         </li>
