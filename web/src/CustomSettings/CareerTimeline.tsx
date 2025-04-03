@@ -63,8 +63,8 @@ const CareerTimeline = () => {
           </div>
           <div className='timeline-end mb-10'>
             <time className='font-mono italic'>Now</time>
-            <div className='text-lg font-black'>現在</div>
-            名古屋市に本社を置くIT系中小企業にて、Java+Springのマイクロサービス開発・Kubernetes,OpenStack,Linuxを使用したクラウドの検討、構築業務・Pythonを使用したAI学習基盤システムの開発をしています。
+            <div className='text-lg font-black'>IT系中小企業(受託・SES)</div>
+            Java+Springのマイクロサービス開発・Kubernetes,OpenStack,Linuxを使用したクラウドの検討、構築業務・Pythonを使用したAI学習基盤システムの開発に従事。
           </div>
           {/* <hr /> */}
         </li>
