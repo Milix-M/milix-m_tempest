@@ -39,7 +39,7 @@ const CareerTimeline = () => {
               />
             </svg>
           </div>
-          <div className='timeline-end mb-10'>
+          <div className='timeline-middle mb-10'>
             <time className='font-mono italic'>2024/03</time>
             <div className='text-lg font-black'>S高等学校 卒業</div>
           </div>
