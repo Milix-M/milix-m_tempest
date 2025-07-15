@@ -4,6 +4,7 @@ import { IoIosPin } from "react-icons/io";
 import SkillsSet from "@/CustomSettings/SkillsSet";
 import CareerTimeline from "@/CustomSettings/CareerTimeline";
 import CertSet from "@/CustomSettings/CertSet";
+import AIset from "@/CustomSettings/AISet";
 
 export default function Profile() {
   return (
@@ -40,6 +41,21 @@ export default function Profile() {
               {process.env.NEXT_PUBLIC_BIO}
             </p>
           </div>
+        </div>
+      </div>
+      <div className="my-6">
+        <h1 className="font-bold text-2xl mt-3 mb-6">Services</h1>
+        <div>
+          <p className="text-xl font-bold">・Misskey Server 運営 2023 ~ 2024/6</p>
+          <span>
+            Oracle Cloud Infrastructure上にVMサーバを構築、分散型ソーシャルネットワークソフトウェアである「Misskey」を使用し、1年半ほどSNSサービスを運営。
+          </span>
+        </div>
+      </div>
+      <div className="my-6">
+        <h1 className="font-bold text-2xl mt-3 mb-6">AI</h1>
+        <div className="grid sm:grid-cols-2 gap-7 grid-cols-1">
+          <AIset />
         </div>
       </div>
       <div className="my-6">
